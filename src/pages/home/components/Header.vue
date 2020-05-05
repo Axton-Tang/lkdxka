@@ -20,11 +20,16 @@
 
 <style lang="stylus" scoped>
     .wrapper
-        position relative
+        position fixed
+        top 0
+        left 0
+        right 0
         width 100%
         height 0
+        box-shadow 0 0 .2rem 0 #666
         padding-bottom 1.26rem
         background #4CBCB0
+        z-index 99
         .img-wrapper
             position absolute
             top .1rem
