@@ -5,6 +5,7 @@
         <home-icons></home-icons>
         <home-introduce></home-introduce>
         <home-recommend></home-recommend>
+        <home-official></home-official>
         <div class="content"></div>
     </div>
 </template>
@@ -14,6 +15,7 @@ import HomeHeader from './components/Header'
 import HomeIcons from './components/Icons'
 import HomeIntroduce from './components/Introduce'
 import HomeRecommend from './components/recommend'
+import HomeOfficial from './components/Official'
 
 export default {
     name: 'Home',
@@ -21,7 +23,8 @@ export default {
         HomeHeader,
         HomeIcons,
         HomeIntroduce,
-        HomeRecommend
+        HomeRecommend,
+        HomeOfficial
     }
 }
 </script>
@@ -37,5 +40,5 @@ export default {
         right 0
         left 0
     .content
-        padding-bottom 20rem
+        padding-bottom 30rem
 </style>
