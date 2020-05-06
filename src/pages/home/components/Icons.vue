@@ -48,6 +48,7 @@
 <style lang="stylus" scoped>
     .icons
         margin-top 1.45rem
+        margin-bottom .15rem
         .icon
             float left
             position relative
