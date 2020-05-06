@@ -2,15 +2,15 @@
     <div class="wrapper">
         <div class="header">
             <div class="sign"></div>
-            <div class="header-content">官方号</div>
-            <span class="iconfont header-icon">&#xe656;</span>
+            <div class="header-content">建立合作</div>
+            <span class="iconfont header-icon">&#xe68e;</span>
         </div>
         <div class="inner-wrap">
             <div class="img-wrapper">
-                <img class="img-content01" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%AE%98%E6%96%B9%E5%8F%B7-%E5%85%AC%E4%BC%97%E5%8F%B7.jpg">
+                <img class="img-content01" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E6%88%91%E8%A6%81%E6%8A%95%E7%A8%BF.jpg">
             </div>
             <div class="img-wrapper">
-                <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%AE%98%E6%96%B9%E5%8F%B7-%E5%AE%98Q.jpg">
+                <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E5%92%8C%E5%85%AC%E7%9B%8A%E5%AE%A3%E4%BC%A0.jpg">
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        name: 'HomeOfficial'
+        name: 'HomeCooperation'
     }
 </script>
 
@@ -44,7 +44,7 @@
             .header-icon
                 float left
                 margin-left .3rem
-                font-size .35rem
+                font-size .4rem
                 color #48aca0
         .inner-wrap
             position relative
@@ -53,7 +53,7 @@
             .img-wrapper
                 width 50%
                 height 0
-                padding-bottom 65%
+                padding-bottom 33%
                 float left
                 .img-content01
                     width 92%

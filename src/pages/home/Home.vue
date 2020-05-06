@@ -6,6 +6,7 @@
         <home-introduce></home-introduce>
         <home-recommend></home-recommend>
         <home-official></home-official>
+        <home-cooperation></home-cooperation>
         <div class="content"></div>
     </div>
 </template>
@@ -16,6 +17,7 @@ import HomeIcons from './components/Icons'
 import HomeIntroduce from './components/Introduce'
 import HomeRecommend from './components/recommend'
 import HomeOfficial from './components/Official'
+import HomeCooperation from './components/Cooperation'
 
 export default {
     name: 'Home',
@@ -24,7 +26,8 @@ export default {
         HomeIcons,
         HomeIntroduce,
         HomeRecommend,
-        HomeOfficial
+        HomeOfficial,
+        HomeCooperation
     }
 }
 </script>
