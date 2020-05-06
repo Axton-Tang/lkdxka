@@ -7,7 +7,7 @@
         <home-recommend></home-recommend>
         <home-official></home-official>
         <home-cooperation></home-cooperation>
-        <div class="content"></div>
+        <home-footer></home-footer>
     </div>
 </template>
 
@@ -18,6 +18,7 @@ import HomeIntroduce from './components/Introduce'
 import HomeRecommend from './components/recommend'
 import HomeOfficial from './components/Official'
 import HomeCooperation from './components/Cooperation'
+import HomeFooter from './components/Footer'
 
 export default {
     name: 'Home',
@@ -27,7 +28,8 @@ export default {
         HomeIntroduce,
         HomeRecommend,
         HomeOfficial,
-        HomeCooperation
+        HomeCooperation,
+        HomeFooter
     }
 }
 </script>
@@ -42,6 +44,5 @@ export default {
         bottom 0
         right 0
         left 0
-    .content
-        padding-bottom 30rem
+
 </style>

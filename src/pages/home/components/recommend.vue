@@ -192,7 +192,7 @@
                 margin 0 auto
                 top 40%
                 border-radius .26rem
-                z-index 120
+                z-index 999
                 .content-wrap
                     position relative
                     top .3rem
