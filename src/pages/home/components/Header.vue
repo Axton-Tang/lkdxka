@@ -7,7 +7,7 @@
             <div class="title">林科大小可爱</div>
         </router-link>
         <div class="icon-more">
-            <span class="iconfont">&#xe67c;</span>
+            <span class="iconfont">&#xe631;</span>
         </div>
     </div>
 </template>
@@ -48,8 +48,8 @@
         .icon-more
             position absolute
             right .3rem
-            top .25rem
+            top .4rem
             .iconfont
-                font-size .7rem
+                font-size .45rem
                 color #fff
 </style>

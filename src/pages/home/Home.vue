@@ -4,6 +4,7 @@
         <home-header></home-header>
         <home-icons></home-icons>
         <home-introduce></home-introduce>
+        <home-recommend></home-recommend>
         <div class="content"></div>
     </div>
 </template>
@@ -12,13 +13,15 @@
 import HomeHeader from './components/Header'
 import HomeIcons from './components/Icons'
 import HomeIntroduce from './components/Introduce'
+import HomeRecommend from './components/recommend'
 
 export default {
     name: 'Home',
     components: {
         HomeHeader,
         HomeIcons,
-        HomeIntroduce
+        HomeIntroduce,
+        HomeRecommend
     }
 }
 </script>

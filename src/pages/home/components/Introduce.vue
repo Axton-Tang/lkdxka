@@ -83,8 +83,8 @@
             .info1
                 text-align center
                 margin auto auto
-                height .5rem
-                line-height .5rem
+                height .55em
+                line-height .55rem
                 color #31a693
                 font-size 100%
         .info2-wrapper
@@ -102,17 +102,17 @@
                 .info2
                     position relative
                     float left
-                    left .2rem
-                    height .5rem
-                    line-height .5rem
+                    left .28rem
+                    height .55rem
+                    line-height .55rem
                     color white
                     font-size 100%
                 .iconfont
                     position relative
                     float left
-                    left .35rem
-                    height .45rem
-                    line-height .45rem
+                    left .43rem
+                    height .55rem
+                    line-height .55rem
                     color white
                     font-size .25rem
             .info-wrapper-inner2
@@ -120,7 +120,7 @@
                 width 100%
                 height 80%
                 background #ffffff
-                opacity .9
+                opacity .95
                 border-radius .06rem
                 z-index 99
                 .inner2-text
