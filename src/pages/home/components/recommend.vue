@@ -38,47 +38,15 @@
                 </a>
             </div>
         </div>
-        <transition name="fade"
-                    enter-active-class="animated fadeIn"
-                    leave-active-class="animated fadeOut"
-
-        >
-            <div class="pop-wrapper"
-                 v-show="show"
-                 @click="handleMiniClose"
-            >
-                <div class="pop-back"></div>
-                <div class="pop-mini-program">
-                    <div class="content-wrap">
-                        <span class="iconfont iconfont-cancel">&#xe69b;</span>
-                        <div class="content-title">小程序版</div>
-                        <p class="content">
-                            请在微信小程序中搜索“林大课表”即可使用
-                        </p>
-                        <p class="extry">
-                            注：小程序仅为测试版本，请以教务网课表为主准！
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </transition>
     </div>
 </template>
 
 <script>
     export default {
         name: 'HomeRecommend',
-        data() {
-            return{
-                show : false
-            }
-        },
         methods : {
             handleMiniClick () {
-                this.show=true;
-            },
-            handleMiniClose () {
-                this.show=false;
+                this.$emit('clickMini');
             }
         }
     }
@@ -171,45 +139,5 @@
                     border-radius .26rem
                     margin-top .1rem
                     box-shadow 0 0 .07rem  #333333
-        .pop-wrapper
-            position fixed
-            top 0
-            right 0
-            bottom 0
-            left 0
-            .pop-back
-                position absolute
-                height 100%
-                width 100%
-                background #000000
-                opacity .2
-                z-index 100
-            .pop-mini-program
-                position relative
-                width 85%
-                height 4rem
-                background #fff
-                margin 0 auto
-                top 40%
-                border-radius .26rem
-                z-index 999
-                .content-wrap
-                    position relative
-                    top .3rem
-                    .iconfont-cancel
-                        position absolute
-                        right .3rem
-                    .content-title
-                        font-size .42rem
-                        text-align center
-                    .content
-                        float left
-                        font-size .32rem
-                        letter-spacing .1rem
-                        line-height .5rem
-                        padding .5rem 1.5rem
-                    .extry
-                        color #cacaca
-                        font-size .24rem
-                        text-align center
+
 </style>
