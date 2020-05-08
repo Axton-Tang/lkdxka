@@ -27,12 +27,12 @@
         width 100%
         height 0
         box-shadow 0 0 .2rem 0 #666
-        padding-bottom 1.26rem
+        padding-bottom 1.15rem
         background #4CBCB0
         z-index 99
         .img-wrapper
             position absolute
-            top .1rem
+            top .05rem
             height 1.05rem
             width 1.05rem
             line-height .92rem
@@ -41,14 +41,14 @@
         .title
             position absolute
             left 1.2rem
-            height 1.3rem
-            line-height 1.3rem
+            height 1.23rem
+            line-height 1.23rem
             font-size .35rem
             color #fff
         .icon-more
             position absolute
             right .3rem
-            top .4rem
+            top .35rem
             .iconfont
                 font-size .45rem
                 color #fff

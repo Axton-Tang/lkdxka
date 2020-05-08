@@ -40,16 +40,23 @@
 <script>
     export default {
         name: 'HomeIntrocuce',
+        props :['introShow'],
         data (){
             return {
-                show : false
+                show : false,
             }
         },
         methods : {
             handleInfoClick (){
                 this.show= !this.show;
             }
+        },
+        watch :{
+            introShow: function () {
+                this.show=false;
+            }
         }
+
     }
 </script>
 
@@ -119,15 +126,16 @@
                 position absolute
                 width 100%
                 height 80%
+                padding-bottom .1rem
                 background #ffffff
                 opacity .95
                 border-radius .06rem
-                z-index 99
+                z-index 2
                 .inner2-text
                     color #31a693
-                    font-size .3rem
                     text-align center
                     letter-spacing .05rem
+                    font-size .28rem
                     height .6rem
                     line-height .6rem
 </style>

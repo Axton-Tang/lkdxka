@@ -10,10 +10,13 @@ import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 import './assets/styles/animate.css'
+import VueTouch from 'vue-touch'
+
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
+Vue.use(VueTouch, {name: 'v-touch'})
 
 /* eslint-disable no-new */
 new Vue({

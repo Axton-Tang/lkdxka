@@ -3,12 +3,11 @@
         <img class="wrapper-back" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E8%83%8C%E6%99%AF.jpg">
         <home-header></home-header>
         <home-icons></home-icons>
-        <home-introduce></home-introduce>
+        <home-introduce :introShow="introShow"></home-introduce>
         <home-recommend @clickMini="handleClickMini"></home-recommend>
         <home-official></home-official>
         <home-cooperation></home-cooperation>
         <home-footer></home-footer>
-
         <transition name="fade"
                     enter-active-class="animated fadeIn"
                     leave-active-class="animated fadeOut"
@@ -58,6 +57,7 @@ export default {
     },
     data () {
         return {
+            introShow :0,
             show : false
         }
     },
@@ -67,7 +67,17 @@ export default {
         },
         closeMini (){
             this.show=false
+        },
+        handleScroll (){
+            this.show=false;
+            this.introShow++;
         }
+    },
+    mounted () {
+        window.addEventListener('scroll', this.handleScroll)
+    },
+    destroyed() {
+        window.removeEventListener('scroll',this.handleScroll)
     }
 }
 </script>
@@ -88,6 +98,7 @@ export default {
         right 0
         bottom 0
         left 0
+        z-index 99
         .pop-back
             position absolute
             height 100%
@@ -106,7 +117,7 @@ export default {
             z-index 999
             .content-wrap
                 position relative
-                top .3rem
+                top .4rem
                 .iconfont-cancel
                     position absolute
                     right .3rem
@@ -118,7 +129,7 @@ export default {
                     font-size .32rem
                     letter-spacing .1rem
                     line-height .5rem
-                    padding .5rem 1.5rem
+                    padding .45rem 1.2rem
                 .extry
                     color #cacaca
                     font-size .24rem
