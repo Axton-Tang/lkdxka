@@ -61,9 +61,9 @@
                 top 0
                 left 0
                 right 0
-                bottom .55rem
+                bottom 28%
                 box-sizing border-box
-                padding .15rem
+                padding 6%
                 .icon-img-content
                     height 100%
                     display block
