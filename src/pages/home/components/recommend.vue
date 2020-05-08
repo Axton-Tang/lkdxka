@@ -28,7 +28,11 @@
                         小程序
                     </div>
                 </div>
-                <div class="other">其他</div>
+                <div class="other"
+                     @click="handleOtherClick"
+                >
+                    其他
+                </div>
             </div>
         </div>
         <div class="part-two">
@@ -47,6 +51,9 @@
         methods : {
             handleMiniClick () {
                 this.$emit('clickMini');
+            },
+            handleOtherClick (){
+                this.$emit('clickOther');
             }
         }
     }

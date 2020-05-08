@@ -1,7 +1,6 @@
 <template>
     <div class="wrapper">
         <Header></Header>
-        this is story
     </div>
 </template>
 
@@ -16,5 +15,7 @@
 </script>
 
 <style lang="stylus" scoped>
-
+    .wrapper
+        width 100%
+        height 100%
 </style>

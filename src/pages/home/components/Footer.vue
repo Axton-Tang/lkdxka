@@ -7,10 +7,12 @@
             </div>
             <div class="row-line"></div>
             <div class="detail-wrapper">
-                <div class="detail">
+                <div class="detail"
+                     @click="handleDeveloper"
+                >
                     <p>Copyright © 2018 - 2020 LKDXKA All Rights Reserved.</p>
                     <p>湖南庠序文化传媒有限公司 &nbsp;&nbsp;觅漾工作室&nbsp;&nbsp;&nbsp;&nbsp;旗下品牌</p>
-                    <p class="pop-detail">制作人 ： 觅漾工作室技术部  &nbsp;
+                    <p class="pop-detail">开发者 ： 觅漾工作室技术部  &nbsp;
                         Axton Tang
                     </p>
                 </div>
@@ -21,7 +23,12 @@
 
 <script>
     export default {
-        name: 'HomeFooter'
+        name: 'HomeFooter',
+        methods : {
+            handleDeveloper (){
+                this.$emit ('clickDeveloper')
+            }
+        }
     }
 </script>
 
