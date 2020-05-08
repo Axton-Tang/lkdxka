@@ -2,9 +2,11 @@
     <div class="icons">
         <swiper>
             <swiper-slide>
-                <div class="icon"
-                     v-for="item of list"
-                     :key="list.id"
+                <router-link tag="div"
+                             class="icon"
+                             v-for="item of list"
+                             :key="list.id"
+                             :to="'/swiper/'+ item.id"
                 >
                     <div class="icon-img">
                         <img class="icon-img-content"
@@ -12,7 +14,7 @@
                         >
                     </div>
                     <div class="icon-desc">{{item.desc}}</div>
-                </div>
+                </router-link>
             </swiper-slide>
         </swiper>
     </div>
