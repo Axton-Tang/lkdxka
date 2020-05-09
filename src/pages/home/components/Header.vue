@@ -6,7 +6,7 @@
         <router-link to="/">
             <div class="title">林科大小可爱</div>
         </router-link>
-        <div class="icon-more">
+        <div class="icon-more" @click="handleAsideClick">
             <span class="iconfont">&#xe631;</span>
         </div>
     </div>
@@ -14,7 +14,12 @@
 
 <script>
     export default {
-        name: 'HomeHeader'
+        name: 'HomeHeader',
+        methods :{
+            handleAsideClick(){
+                this.$emit('asideClick');
+            }
+        }
     }
 </script>
 
@@ -29,7 +34,7 @@
         box-shadow 0 0 .2rem 0 #666
         padding-bottom 1.15rem
         background #4CBCB0
-        z-index 99
+        z-index 999
         .img-wrapper
             position absolute
             top .05rem

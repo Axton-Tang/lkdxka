@@ -1,24 +1,41 @@
 <template>
     <div class="wrapper">
         <img class="wrapper-back" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E8%83%8C%E6%99%AF.jpg">
-        <home-header></home-header>
+        <home-header  @asideClick="handleAsideClick"></home-header>
         <home-icons></home-icons>
-        <home-introduce :introShow="introShow"></home-introduce>
+        <home-introduce :introShow="introShow"
+                        class="introduce"
+        ></home-introduce>
         <home-recommend @clickMini="handleClickMini"
                         @clickOther="handleClickOther"
         ></home-recommend>
         <home-official></home-official>
         <home-cooperation></home-cooperation>
 
-        <div class="go-top"
-             v-if="backFlag"
-             @click="backTop"
+        <transition name="fade"
+                    enter-active-class="animated fadeIn"
+                    leave-active-class="animated fadeOut"
 
         >
-            <div class="iconfont">&#xe6fa;</div>
-        </div>
+            <div class="go-top"
+                 v-if="backFlag"
+                 @click="backTop"
+
+            >
+                <div class="iconfont">&#xe6fa;</div>
+            </div>
+        </transition>
 
         <home-footer @clickDeveloper="handleDeveloper"></home-footer>
+
+        <transition name="fade"
+                    enter-active-class="animated slideInRight"
+                    leave-active-class="animated slideOutRight"
+
+        >
+            <home-aside v-show="asideShow"></home-aside>
+        </transition>
+
         <home-pop :miniShow="miniShow"
                   @popClose="handleClickMini"
                   :otherShow="otherShow"
@@ -38,6 +55,7 @@ import HomeOfficial from './components/Official'
 import HomeCooperation from './components/Cooperation'
 import HomeFooter from './components/Footer'
 import HomePop from './components/Pop'
+import HomeAside from './components/Aside'
 
 export default {
     name: 'Home',
@@ -49,7 +67,8 @@ export default {
         HomeOfficial,
         HomeCooperation,
         HomeFooter,
-        HomePop
+        HomePop,
+        HomeAside
     },
     data () {
         return {
@@ -57,7 +76,8 @@ export default {
             miniShow : false,
             otherShow :false,
             developerShow :false,
-            backFlag : false
+            backFlag : false,
+            asideShow : false
         }
     },
     methods : {
@@ -75,6 +95,9 @@ export default {
             this.otherShow=false;
             this.developerShow=false
             this.introShow++;
+        },
+        handleAsideClick(){
+            this.asideShow=true;
         },
 
         backTop () {
@@ -118,25 +141,28 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
-    .wrapper-back
-        position fixed
-        width 100%
-        height 100%
-        top 0
-        bottom 0
-        right 0
-        left 0
-    .go-top
-        position fixed
-        right .3rem
-        bottom 1rem
-        width .8rem
-        height .8rem
-        background white
-        border-radius .06rem
-        .iconfont
-            color #2CD6B1
-            font-size .8rem
+    .wrapper
+        overflow hidden
+        .wrapper-back
+            position fixed
+            width 100%
+            height 100%
+            top 0
+            bottom 0
+            right 0
+            left 0
+        .introduce
+            overflow visible
+        .go-top
+            position fixed
+            right .3rem
+            bottom 1rem
+            width .8rem
+            height .8rem
+            background white
+            border-radius .06rem
+            .iconfont
+                color #2CD6B1
+                font-size .8rem
 
 </style>
