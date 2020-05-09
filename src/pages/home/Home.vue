@@ -28,13 +28,9 @@
 
         <home-footer @clickDeveloper="handleDeveloper"></home-footer>
 
-        <transition name="fade"
-                    enter-active-class="animated slideInRight"
-                    leave-active-class="animated slideOutRight"
-
-        >
-            <home-aside v-show="asideShow"></home-aside>
-        </transition>
+        <home-aside :asideShow="asideShow"
+                    @closeAside="handleAsideClick"
+        ></home-aside>
 
         <home-pop :miniShow="miniShow"
                   @popClose="handleClickMini"
@@ -93,11 +89,12 @@ export default {
         handleScroll (){
             this.miniShow=false;
             this.otherShow=false;
-            this.developerShow=false
+            this.developerShow=false;
+            this.asideShow=false;
             this.introShow++;
         },
         handleAsideClick(){
-            this.asideShow=true;
+            this.asideShow=!this.asideShow;
         },
 
         backTop () {
