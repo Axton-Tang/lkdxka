@@ -76,15 +76,15 @@
             margin 0 auto
             text-align center
             .img-content
-                width 95%
+                width 93%
                 border-radius .26rem
                 margin-top .1rem
                 box-shadow 0 0 .07rem  #333333
         .info-wrapper
             position absolute
             width 95%
-            top 3.35rem
-            left 2.8rem
+            top 3.2rem
+            left 2.7rem
             color white
             .info1-wrapper
                 float left

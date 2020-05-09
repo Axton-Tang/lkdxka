@@ -67,7 +67,7 @@
         width 100%
         overflow hidden
         .header
-            margin-left .25rem
+            margin-left .28rem
             padding-bottom .55rem
             .sign
                 float left
@@ -93,7 +93,7 @@
                 margin 0 auto
                 text-align center
                 .img-content
-                    width 95%
+                    width 93%
                     border-radius .26rem
                     margin-top .1rem
                     box-shadow 0 0 .07rem  #333333
@@ -142,7 +142,7 @@
                 margin 0 auto
                 text-align center
                 .img-content
-                    width 95%
+                    width 93%
                     border-radius .26rem
                     margin-top .1rem
                     box-shadow 0 0 .07rem  #333333

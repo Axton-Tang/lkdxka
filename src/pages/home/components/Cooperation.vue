@@ -26,11 +26,10 @@
     .wrapper
         position relative
         float left
-        padding-top .25rem
         width 100%
         overflow hidden
         .header
-            margin-left .25rem
+            margin-left .28rem
             padding-bottom .5rem
             .sign
                 float left
@@ -56,17 +55,17 @@
                 padding-bottom 33%
                 float left
                 .img-content01
-                    width 92%
+                    width 91%
                     margin-top .1rem
-                    margin-left .2rem
+                    margin-left .25rem
                     border-radius .26rem
                     box-shadow 0 0 .07rem #999999
 
                 .img-content02
-                    width 92%
+                    width 91%
                     float right
                     margin-top .1rem
-                    margin-right .2rem
+                    margin-right .25rem
                     border-radius .26rem
                     box-shadow 0 0 .07rem  #999999
 </style>
