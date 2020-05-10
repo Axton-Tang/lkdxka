@@ -66,7 +66,7 @@
 
     .wrapper
         position relative
-        float left
+        padding-top .1rem
         z-index 2
         .img-wrapper
             width 100%
@@ -78,7 +78,6 @@
             .img-content
                 width 93%
                 border-radius .26rem
-                margin-top .1rem
                 box-shadow 0 0 .07rem  #333333
         .info-wrapper
             position absolute

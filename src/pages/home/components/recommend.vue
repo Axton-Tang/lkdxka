@@ -62,7 +62,7 @@
 <style lang="stylus" scoped>
     .wrapper
         position relative
-        float left
+        float lefts
         padding-top .25rem
         width 100%
         overflow hidden

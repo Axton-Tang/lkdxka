@@ -79,6 +79,9 @@
                 if (flag===1){
                     this.closeAside();
                 }
+                if(flag===4){
+                    this.active=1;
+                }
             }
         }
     }
