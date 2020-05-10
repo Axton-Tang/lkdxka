@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <router-link to="/">
-            <fix-header></fix-header>
+            <fix-header class="header"></fix-header>
         </router-link>
         <div class="info">
             该区域暂未开放，敬请期待！
@@ -25,6 +25,10 @@
         top 7rem
         width 100%
         height 2rem
+        .header
+            position fixed
+            top 0
+            height 0
         .info
             position relative
             font-size .36rem

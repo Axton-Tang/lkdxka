@@ -81,9 +81,9 @@
                 box-shadow 0 0 .07rem  #333333
         .info-wrapper
             position absolute
-            width 95%
-            top 3.2rem
-            left 2.7rem
+            width 4.6rem
+            top 3rem
+            right .2rem
             color white
             .info1-wrapper
                 float left

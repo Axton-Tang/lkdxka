@@ -136,7 +136,7 @@
         .header
             top 0
         .content
-            font-size: 20px
+            font-size: 16px
             width: 100%
             height: 100%
             overflow: auto
@@ -146,7 +146,7 @@
                 display block
                 clear both
                 .head-img-left
-                    margin-left .1rem
+                    margin-left .08rem
                     width 1rem
                     height 1rem
                     float left
@@ -159,10 +159,10 @@
 
     .content li span{
         background: #4CBCB0
-        padding: .15rem;
+        padding: .1rem;
         border-radius: .26rem;
         float: left;
-        margin: .16rem .26rem.2rem .26rem;
+        margin: .16rem .26rem.2rem .2rem;
         max-width: 5.3rem;
         border: 1px solid #ccc;
         box-shadow: 0 0 3px #ccc;

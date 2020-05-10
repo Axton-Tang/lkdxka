@@ -40,7 +40,7 @@
         bottom 0
         width 100%
         height 0
-        padding-bottom 48%
+        padding-bottom 53%
         background #2E2F33
         color #6C6D6E
         .content-wrapper

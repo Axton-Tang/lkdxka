@@ -123,10 +123,10 @@
                     letter-spacing .2rem
                     font-weight 600
                 .small-info
-                    margin .2rem auto
+                    margin .17rem auto
                     font-size .28rem
                     color #9d9fa0
-                    line-height .32rem
+                    line-height .3rem
                     letter-spacing .05rem
                     margin-right .2rem
             .img-wrapper
