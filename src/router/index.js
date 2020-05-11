@@ -7,6 +7,7 @@ import New from '../pages/swiper/New'
 import Join from '../pages/swiper/Join'
 import Business from '../pages/swiper/Business'
 import Chat from '../pages/home/components/Chat'
+import Contribution from '../pages/cooperation/contribution'
 
 
 Vue.use(Router)
@@ -41,6 +42,10 @@ export default new Router({
           path: '/chat',
           name: 'Chat',
           component: Chat
+      },{
+          path: '/contribution',
+          name: 'Contribution',
+          component: Contribution
       }
   ]
 })
