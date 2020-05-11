@@ -8,6 +8,7 @@ import Join from '../pages/swiper/Join'
 import Business from '../pages/swiper/Business'
 import Chat from '../pages/home/components/Chat'
 import Contribution from '../pages/cooperation/contribution'
+import Propo from '../pages/cooperation/Propo'
 
 
 Vue.use(Router)
@@ -46,6 +47,13 @@ export default new Router({
           path: '/contribution',
           name: 'Contribution',
           component: Contribution
+      },{
+          path: '/propo',
+          name: 'Propo',
+          component: Propo
       }
-  ]
+  ],
+    scrollBehavior (to,from,savedPosition) {
+        return {x:0.,y:0}
+    }
 })

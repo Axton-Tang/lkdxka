@@ -11,9 +11,11 @@
                     <img class="img-content01" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E6%8A%95%E7%A8%BF%E5%B0%81%E9%9D%A2.jpg">
                 </div>
             </router-link>
-            <div class="img-wrapper">
-                <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E5%92%8C%E5%85%AC%E7%9B%8A%E5%AE%A3%E4%BC%A0.jpg">
-            </div>
+            <router-link to="/propo">
+                <div class="img-wrapper">
+                    <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E5%92%8C%E5%85%AC%E7%9B%8A%E5%AE%A3%E4%BC%A0.jpg">
+                </div>
+            </router-link>
         </div>
     </div>
 </template>
