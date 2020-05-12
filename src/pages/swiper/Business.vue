@@ -70,7 +70,7 @@
                 width 100%
             .content-wrapper
                 position absolute
-                bottom -6.5rem
+                top 3.6rem
                 width 100%
                 height 0
                 padding-bottom 95%
