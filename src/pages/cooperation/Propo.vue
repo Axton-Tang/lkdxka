@@ -60,20 +60,20 @@
                 width 100%
             .content-wrapper
                 position absolute
-                top 3.8rem
+                bottom -6.5rem
                 width 100%
                 height 0
                 padding-bottom 95%
                 .content
                     position relative
-                    width 90%
+                    width 88%
                     background #fff
                     margin 0 auto
-                    border-radius .06rem
+                    border-radius .1rem
                     box-shadow 0 0 .07rem  #ccc
                     .inner
                         width 100%
-                        border-radius .06rem
+                        border-radius .1rem
 
                 .footer
                     position relative
