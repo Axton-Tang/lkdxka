@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" @click="handleBack">
         <div class="icon-wrapper">
             <div class="iconfont">&#xe601;</div>
         </div>
@@ -10,6 +10,11 @@
 <script>
     export default {
         name: 'FixHeader',
+        methods :{
+            handleBack (){
+                this.$router.go(-1);
+            }
+        }
     }
 </script>
 

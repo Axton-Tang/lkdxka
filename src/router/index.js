@@ -20,10 +20,6 @@ export default new Router({
           name: 'Home',
           component: Home
     },{
-          path: '/story',
-          name: 'Story',
-          component: Story
-      },{
           path: '/swiper/001',
           name: 'About',
           component: About
@@ -51,6 +47,10 @@ export default new Router({
           path: '/propo',
           name: 'Propo',
           component: Propo
+      },{
+          path: '/story',
+          name: 'Story',
+          component: Story
       }
   ],
     scrollBehavior (to,from,savedPosition) {

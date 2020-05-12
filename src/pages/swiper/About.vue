@@ -3,9 +3,11 @@
         <router-link to="/">
             <fix-header></fix-header>
         </router-link>
-        <div class="develop-wrapper">
-            <img class="develop-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B.png">
-        </div>
+        <router-link to="/story">
+            <div class="develop-wrapper">
+                <img class="develop-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B.png">
+            </div>
+        </router-link>
         <div class="title-wrapper">
             <div class="iconfont">&#xe6b5;</div>
             <div class="title">部门介绍</div>
