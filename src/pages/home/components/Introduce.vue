@@ -6,7 +6,7 @@
         <div class="info-wrapper">
             <router-link to="/story">
                 <div class="info1-wrapper">
-                    <div class="info1">了解品牌故事</div>
+                    <div class="info1">了解团队故事</div>
                 </div>
             </router-link>
             <div class="info2-wrapper">
