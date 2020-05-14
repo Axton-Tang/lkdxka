@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="img-wrapper">
+        <div class="img-wrapper" @click="closeDepart">
             <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/fe-%E4%BA%86%E8%A7%A3%E5%93%81%E7%89%8C%E6%95%85%E4%BA%8B.jpg">
         </div>
         <div class="info-wrapper">
@@ -46,6 +46,9 @@
         methods : {
             handleInfoClick (){
                 this.show=!this.show;
+            },
+            closeDepart(){
+                this.show=false;
             },
             handleClickYunying (){
                 this.$bus.emit("clickYunying");

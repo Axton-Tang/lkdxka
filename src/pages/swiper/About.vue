@@ -43,7 +43,7 @@
             </div>
         </div>
         <fix-footer class="footer"></fix-footer>
-        <Department></Department>
+        <department-b></department-b>
     </div>
 
 </template>
@@ -51,24 +51,24 @@
 <script>
     import FixHeader from '../FixHeader'
     import FixFooter from '../FixFooter'
-    import Department from '../introduce/Department'
+    import DepartmentB from '../introduce/DepartmentB'
 
     export default {
         name: 'About',
         components :{
             FixHeader,
             FixFooter,
-            Department
+            DepartmentB
         },
         methods:{
             handleClickYunying (){
-                this.$bus.emit("clickYunying");
+                this.$bus.emit("clickYunyingB");
             },
             handleClickBianji (){
-                this.$bus.emit("clickBianji");
+                this.$bus.emit("clickBianjiB");
             },
             handleClickJishu (){
-                this.$bus.emit("clickJishu");
+                this.$bus.emit("clickJishuB");
             }
         }
     }
@@ -137,9 +137,10 @@
                     font-size .35rem
                     letter-spacing .2rem
                     font-weight 600
+                    margin .05rem 0
                 .small-info
-                    margin .17rem auto
-                    font-size .27rem
+                    margin .15rem auto
+                    font-size .26rem
                     color #9d9fa0
                     line-height .3rem
                     letter-spacing .05rem

@@ -133,9 +133,9 @@
             }
         },
         created() {
-            this.$bus.on("clickYunying",this.Yunying);
-            this.$bus.on("clickBianji",this.Bianji);
-            this.$bus.on("clickJishu",this.Jishu);
+            this.$bus.on("clickYunyingB",this.Yunying);
+            this.$bus.on("clickBianjiB",this.Bianji);
+            this.$bus.on("clickJishuB",this.Jishu);
         }
     }
 </script>
