@@ -88,39 +88,40 @@
 </script>
 
 <style lang="stylus" scoped>
-
-    .back-wrapper
-        position fixed
-        top 0
-        right 0
-        bottom 0
-        left 0
-        z-index 120
-        overflow hidden
-        .back
-            height 100%
-            width 100%
-            background #000000
-            opacity .2
-    .content-wrapper
-        position fixed
-        z-index 120
-        right 0
-        top 1.15rem
-        bottom 0
-        width 55%
-        background #ffffff
-        .a
-            color #000000
-        .info
-            height 1.2rem
-            line-height 1.2rem
-            font-size .32rem
-            padding-left .6rem
-        .active
-            background #4CBCB0
-            color #ffffff
-            opacity .4
-            font-size  .38rem
+    .wrapper
+        z-index 200
+        .back-wrapper
+            position fixed
+            top 0
+            right 0
+            bottom 0
+            left 0
+            z-index 120
+            overflow hidden
+            .back
+                height 100%
+                width 100%
+                background #000000
+                opacity .2
+        .content-wrapper
+            position fixed
+            z-index 120
+            right 0
+            top 1.15rem
+            bottom 0
+            width 55%
+            background #ffffff
+            .a
+                color #000000
+            .info
+                height 1.2rem
+                line-height 1.2rem
+                font-size .32rem
+                padding-left .6rem
+            .active
+                background #4CBCB0
+                color #ffffff
+                opacity .4
+                font-size  .38rem
 
 </style>

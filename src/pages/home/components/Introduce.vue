@@ -22,15 +22,9 @@
                          v-show="show"
                     >
                        <ul class="inner2-text">
-                           <router-link to="/story">
-                               <li>运营部</li>
-                           </router-link>
-                           <router-link to="/story">
-                               <li>编辑部</li>
-                           </router-link>
-                           <router-link to="/story">
-                                <li>技术部</li>
-                           </router-link>
+                           <li @click="handleClickYunying">运营部</li>
+                           <li @click="handleClickBianji">编辑部</li>
+                            <li @click="handleClickJishu">技术部</li>
                        </ul>
                     </div>
                 </transition>
@@ -40,6 +34,7 @@
 </template>
 
 <script>
+
     export default {
         name: 'HomeIntrocuce',
         props :['introShow'],
@@ -50,9 +45,19 @@
         },
         methods : {
             handleInfoClick (){
-                this.show= !this.show;
+                this.show=!this.show;
+            },
+            handleClickYunying (){
+                this.$bus.emit("clickYunying");
+            },
+            handleClickBianji (){
+                this.$bus.emit("clickBianji");
+            },
+            handleClickJishu (){
+                this.$bus.emit("clickJishu");
             }
         },
+
         watch :{
             introShow: function () {
                 this.show=false;
@@ -85,6 +90,7 @@
             top 3rem
             right .2rem
             color white
+
             .info1-wrapper
                 float left
                 .info1

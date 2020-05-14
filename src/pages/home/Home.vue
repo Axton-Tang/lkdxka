@@ -39,6 +39,7 @@
                   :developerShow="developerShow"
                   @developerClose="handleDeveloper"
         ></home-pop>
+        <Department></Department>
     </div>
 </template>
 
@@ -52,6 +53,7 @@ import HomeCooperation from './components/Cooperation'
 import HomeFooter from './components/Footer'
 import HomePop from './components/Pop'
 import HomeAside from './components/Aside'
+import Department from '../introduce/Department'
 
 export default {
     name: 'Home',
@@ -64,7 +66,8 @@ export default {
         HomeCooperation,
         HomeFooter,
         HomePop,
-        HomeAside
+        HomeAside,
+        Department
     },
     data () {
         return {

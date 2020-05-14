@@ -66,7 +66,7 @@
                             </td>
                             <td class="column-right">
                                 <p class="time">2019.11 <i class="dian active"></i></p>
-                                <p>汤达人元气音乐节·长沙站组委会官方授权互动送票平台</p>
+                                <p>汤达人元气音乐节·长沙站组委会官方授权为互动送票平台</p>
                             </td>
 
                         </tr>
@@ -84,7 +84,7 @@
                             <td class="column-right">
                                 <p class="time">2019.07<i class="dian active"></i></p>
                                 <p>创建2000余人新生答疑群，为19级新生提供各类答疑服务
-                                    <br>   帮助近50个社团公益迎新宣传</p>
+                                    <br> <br> 帮助近50个社团公益迎新宣传</p>
                             </td>
                         </tr>
                         <tr>
@@ -133,7 +133,7 @@
                             W
                         </span>
                         +
-                        <div class="unit">推文阅读</div>
+                        <div class="unit">推文阅读量</div>
                         <div class="after"></div>
                     </li>
                     <li class="data-item">
@@ -245,7 +245,7 @@
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
                 that.scrollTop = scrollTop;
                 //判断滚动超出一定距离后在让返回顶部按钮出现
-                if (that.scrollTop > 1400) {
+                if (that.scrollTop > 1350) {
                     this.showLine=false;
                     this.show=true;
                     if(this.count===0){
@@ -385,7 +385,7 @@
                                 background #4cbcb0
                     .column-left
                         width 50%
-                        padding .4rem .5rem
+                        padding 0 .5rem
                         border-right .06rem solid #4cbcb0
                         text-align right
                         line-height .5rem
@@ -433,7 +433,7 @@
                         text-overflow: ellipsis;
                         overflow: hidden
                         .number
-                            font-size: .6rem;
+                            font-size: .55rem;
                             color: #171926;
                             line-height: 1;
                             font-family: dinmedium;
@@ -450,7 +450,7 @@
                         .after
                             height: .5rem;
                             width: .05rem;
-                            margin-top: .1rem;
+                            margin-top: .04rem;
                             content: "";
                             display: block;
                             background: #979797;

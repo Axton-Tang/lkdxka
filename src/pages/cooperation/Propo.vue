@@ -91,6 +91,6 @@
                     .info
                         position relative
                         margin .4rem 0
-                        font-size .32rem
+                        font-size .3rem
                         color #6c6d6e
 </style>

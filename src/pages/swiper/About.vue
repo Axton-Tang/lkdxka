@@ -13,7 +13,7 @@
             <div class="title">部门介绍</div>
             <div class="title-two">Introduction</div>
         </div>
-        <div class="introduce-wrapper">
+        <div class="introduce-wrapper" @click="handleClickYunying">
             <div class="content">
                 <div class="content-head">运营部</div>
                 <p class="small-info">运营部下设策划组、官Q组、外联组。在这里可以尽情放飞你的idea！ </p>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="line"></div>
-        <div class="introduce-wrapper">
+        <div class="introduce-wrapper" @click="handleClickBianji">
             <div class="content">
                 <div class="content-head">编辑部</div>
                 <p class="small-info">编辑部下设美术组、视频组、文案组。如果你文采奕奕、酷爱设计，这就是你绽放的舞台！ </p>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="line"></div>
-        <div class="introduce-wrapper">
+        <div class="introduce-wrapper" @click="handleClickJishu">
             <div class="content">
                 <div class="content-head">技术部</div>
                 <p class="small-info">技术部下设开发组和产品组。在技术大佬的帮助下，可以大胆的开发你自己的产品！</p>
@@ -43,6 +43,7 @@
             </div>
         </div>
         <fix-footer class="footer"></fix-footer>
+        <Department></Department>
     </div>
 
 </template>
@@ -50,12 +51,25 @@
 <script>
     import FixHeader from '../FixHeader'
     import FixFooter from '../FixFooter'
+    import Department from '../introduce/Department'
 
     export default {
         name: 'About',
         components :{
             FixHeader,
-            FixFooter
+            FixFooter,
+            Department
+        },
+        methods:{
+            handleClickYunying (){
+                this.$bus.emit("clickYunying");
+            },
+            handleClickBianji (){
+                this.$bus.emit("clickBianji");
+            },
+            handleClickJishu (){
+                this.$bus.emit("clickJishu");
+            }
         }
     }
 </script>
