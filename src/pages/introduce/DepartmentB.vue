@@ -141,6 +141,7 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .pop-back
         position fixed
         top 0
@@ -187,14 +188,14 @@
                     padding .35rem .35rem
                     margin 0 .1rem
                     .info-title
-                        color #52c5b7
+                        color $themeColor
                         font-size .34rem
                         font-weight 600
                         line-height 1rem
                     .info
                         letter-spacing .05rem
                     .result-title
-                        color #52c5b7
+                        color $themeColor
                         font-size .34rem
                         font-weight 600
                         line-height 1rem

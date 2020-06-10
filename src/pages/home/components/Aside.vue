@@ -108,10 +108,11 @@
             position fixed
             z-index 120
             right 0
-            top 1.15rem
+            top 1rem
             bottom 0
             width 55%
             background #ffffff
+
             .a
                 color #000000
             .info

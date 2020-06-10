@@ -17,7 +17,7 @@
                         </div>
                         <div class="inner-wrapper">
                             <div class="inner-img-wrapper">
-                                <img class="inner-img" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">
+                                <img class="inner-img" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
                                 <div class="wechat">微信号： Cxx11_</div>
                             </div>
                         </div>
@@ -45,24 +45,24 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .back
         position absolute
         top 0
         right 0
         bottom 0
         left 0
-        background #e1e6ff
+        background #f1f1f3
         opacity .4
     .wrapper
         position relative
-        float left
         .header
             position fixed
             top 0
             height 0
         .first-wrapper
             position relative
-            margin-top 1.15rem
+            margin-top 1rem
             width 100%
             height 0
             padding-bottom 60.88%
@@ -103,7 +103,7 @@
                                 width 20%
                                 height .15rem
                                 border-radius 2rem
-                                background #4cbcb0
+                                background $themeColor
                     .inner-wrapper
                         position absolute
                         float left

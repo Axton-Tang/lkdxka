@@ -39,6 +39,7 @@
         .img-wrapper
             position absolute
             top .05rem
+            left .15rem
             height .9rem
             width .9rem
             line-height .92rem
@@ -46,7 +47,7 @@
                 width 100%
         .title
             position absolute
-            left 1.1rem
+            left 1.2rem
             height 1.1rem
             line-height 1.1rem
             font-size .33rem
@@ -54,9 +55,9 @@
             font-weight 550
         .icon-more
             position absolute
-            right .3rem
+            right .35rem
             top .35rem
             .iconfont
                 font-size .38rem
-                color #616161
+                color $themeColor
 </style>

@@ -2,10 +2,11 @@
     <div class="wrapper">
         <div class="wrapper-back"></div>
         <home-header  @asideClick="handleAsideClick"></home-header>
-        <home-icons></home-icons>
+
         <home-introduce :introShow="introShow"
                         class="introduce"
         ></home-introduce>
+        <home-icons></home-icons>
         <home-recommend @clickMini="handleClickMini"
                         @clickOther="handleClickOther"
         ></home-recommend>
@@ -152,7 +153,7 @@ export default {
             bottom 0
             right 0
             left 0
-            background #F6F6F8
+            background fff
         .introduce
             overflow visible
         .go-top
@@ -163,6 +164,7 @@ export default {
             height .8rem
             background white
             border-radius .06rem
+            box-shadow 0 0 .05rem  $themeColor
             .iconfont
                 color $themeColor
                 font-size .8rem

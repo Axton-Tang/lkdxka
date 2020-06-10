@@ -1,7 +1,9 @@
 <template>
     <div class="wrapper">
+        <div class="intro-back"></div>
+        <div class="back-info">你这么可爱，还来看我！</div>
         <div class="img-wrapper" @click="closeDepart">
-            <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/fe-%E4%BA%86%E8%A7%A3%E5%93%81%E7%89%8C%E6%95%85%E4%BA%8B.jpg">
+            <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E4%BA%86%E8%A7%A3%E6%88%91%E4%BB%AC%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
         </div>
         <div class="info-wrapper">
             <router-link to="/story">
@@ -30,6 +32,7 @@
                 </transition>
             </div>
         </div>
+        <div class="edge"></div>
     </div>
 </template>
 
@@ -74,15 +77,31 @@
     @import "~styles/varibles.styl"
     .wrapper
         position relative
-        padding-top .1rem
         z-index 2
+        .intro-back
+            position absolute
+            width 100%
+            padding-bottom 50%
+            border-radius .5rem
+            background-image linear-gradient(to bottom right,#02ea94, #B3F7F6);
+            z-index -100
+            vertical-align middle
+        .back-info
+            position absolute
+            top  1.45rem
+            color #fff
+            left 50%
+            transform translate(-50%)
+            font-size .32rem
         .img-wrapper
             width 100%
             height 0
             padding-bottom 55.667%
             overflow hidden
-            margin 0 auto
+            margin  0 auto
+            padding-top 2.3rem
             text-align center
+            z-index 100
             .img-content
                 width 93%
                 border-radius .26rem
@@ -90,10 +109,10 @@
         .info-wrapper
             position absolute
             width 4.6rem
-            top 3rem
+            top 5.3rem
             right .2rem
             color white
-
+            z-index 1000
             .info1-wrapper
                 float left
                 .info1
@@ -127,6 +146,7 @@
                     background #ffffff
                     opacity .95
                     border-radius .06rem
+                    box-shadow 0 0 .05rem 0 $themeColor
                     z-index 100
                     .inner2-text
                         color $themeColor
@@ -135,4 +155,9 @@
                         font-size .28rem
                         height .6rem
                         line-height .6rem
+        .edge
+            width 100%
+            height .15rem
+            margin .1rem 0
+            background #f1f1f3
 </style>

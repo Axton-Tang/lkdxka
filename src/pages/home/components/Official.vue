@@ -13,6 +13,7 @@
                 <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%AE%98%E6%96%B9%E5%8F%B7-%E5%AE%98Q.jpg">
             </div>
         </div>
+        <div class="edge"></div>
     </div>
 </template>
 
@@ -31,7 +32,7 @@
         overflow hidden
         .header
             padding .25rem 0 .55rem .28rem
-            background #fff
+
             .sign
                 float left
                 width .15rem
@@ -51,6 +52,7 @@
             overflow hidden
             width 100%
             top .1rem
+            margin-bottom .1rem
             .img-wrapper
                 width 50%
                 height 0
@@ -61,7 +63,7 @@
                     margin-top .1rem
                     margin-left .25rem
                     border-radius .26rem
-                    box-shadow 0 0 .07rem #999999
+                    box-shadow 0 0 .07rem $themeColor
 
                 .img-content02
                     width 91%
@@ -69,5 +71,10 @@
                     margin-top .1rem
                     margin-right .25rem
                     border-radius .26rem
-                    box-shadow 0 0 .07rem  #999999
+                    box-shadow 0 0 .07rem  $themeColor
+        .edge
+            width 100%
+            height .15rem
+            margin .05rem 0
+            background #f1f1f3
 </style>

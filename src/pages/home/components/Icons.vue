@@ -17,6 +17,7 @@
                 </router-link>
             </swiper-slide>
         </swiper>
+        <div class="edge"></div>
     </div>
 </template>
 
@@ -48,9 +49,8 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .icons
-        margin-top 1.45rem
-        margin-bottom .15rem
         .icon
             float left
             position relative
@@ -58,6 +58,7 @@
             width 25%
             height 0
             padding-bottom 25%
+
             .icon-img
                 position absolute
                 top 0
@@ -80,4 +81,9 @@
                 text-align center
                 font-size .26rem
                 color #333333
+        .edge
+            width 100%
+            height .15rem
+            margin .2rem 0
+            background #f1f1f3
 </style>

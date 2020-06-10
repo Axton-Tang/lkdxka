@@ -126,10 +126,10 @@
     }
 </script>
 <style lang="stylus" scoped>
-
+    @import "~styles/varibles.styl"
     .wrapper
         position fixed
-        top:1.15rem
+        top:1rem
         right:0
         bottom 1.15rem
         left 0
@@ -140,7 +140,7 @@
             width: 100%
             height: 100%
             overflow: auto
-            background #fafafa
+            background #f1f1f3
             .content-item
                 margin-top .2rem
                 display block
@@ -158,12 +158,12 @@
                     border-radius .5rem
 
     .content li span{
-        background: #4CBCB0
+        background: $themeColor
         padding: .1rem;
         border-radius: .26rem;
         float: left;
         margin: .16rem .26rem.2rem .2rem;
-        max-width: 5.3rem;
+        max-width: 63%;
         border: 1px solid #ccc;
         box-shadow: 0 0 3px #ccc;
         line-height .6rem
@@ -176,7 +176,7 @@
     }
     .content li span.spanright {
         float: right;
-        background: #4CBCB0
+        background: $themeColor
         color white
         opacity .9
     }
@@ -187,8 +187,7 @@
             bottom 0
             width: 100%
             height: 1.15rem
-            background: #4CBCB0
-            bottom: 0
+            background: #fff
             overflow: hidden
             .footer-input
                 margin-top: .2rem
@@ -199,21 +198,23 @@
                 text-indent: .2rem
                 position: absolute
                 border-radius: .35rem
+                border .025rem solid $themeColor
                 margin-left: .25rem
                 padding 0 .4rem
                 box-sizing border-box
+                background #efeff1
             .footer-btn
                 margin-top: .2rem
                 display: inline-block
                 width: 18%
                 height: 65%
-                background: #ffffff
+                background: $themeColor
                 font-weight: 900
                 line-height: .75rem
                 cursor: pointer
                 text-align: center
                 font-size .31rem
-                color #43a095
+                color #fff
                 position: absolute
                 right: .22rem
                 border-radius: .56rem

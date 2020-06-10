@@ -35,24 +35,24 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .back
         position fixed
         top 0
         right 0
         bottom 0
         left 0
-        background #e1e6ff
+        background #f1f1f3
         opacity .4
     .wrapper
         position relative
-        float left
         .header
             position fixed
             top 0
             height 0
         .first-wrapper
             position relative
-            margin-top 1.15rem
+            margin-top 1rem
             width 100%
             height 0
             padding-bottom 60.88%

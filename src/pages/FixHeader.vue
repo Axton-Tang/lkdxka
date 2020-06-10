@@ -19,6 +19,7 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
         position fixed
         top 0
@@ -26,24 +27,24 @@
         right 0
         width 100%
         height 0
-        box-shadow 0 0 .2rem 0 #666
-        padding-bottom 1.15rem
-        background #4CBCB0
+        box-shadow 0 0 .1rem 0 #bfc1c2
+        padding-bottom 1rem
+        background #fff
         z-index 99
         .icon-wrapper
             position absolute
-            top .4rem
+            top .32rem
             left .3rem
             width .6rem
             height .6rem
-            color #ffffff
+            color $themeColor
             .iconfont
                 font-size .37rem
         .title
             position relative
-            height 1.23rem
-            line-height 1.23rem
+            height 1rem
+            line-height 1rem
             font-size .35rem
-            color #fff
+            color #686868
             text-align center
 </style>

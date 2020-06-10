@@ -62,24 +62,24 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .back
         position fixed
         top 0
         right 0
         bottom 0
         left 0
-        background #e1e6ff
+        background #f1f1f3
         opacity .4
     .wrapper
         position relative
-        float left
         .header
             position fixed
             top 0
             height 0
         .first-wrapper
             position relative
-            margin-top 1.15rem
+            margin-top 1rem
             width 100%
             height 0
             padding-bottom 60.88%
@@ -105,14 +105,14 @@
                         .h2-info
                             margin 1rem 0 .5rem 0
                             font-size .35rem
-                            color #4cbcb0
+                            color $themeColor
                             .circle
                                 float left
                                 width .2rem
                                 height .2rem
                                 margin-top .06rem
                                 margin-right .2rem
-                                background #4cbcb0
+                                background $themeColor
                                 border-radius 1rem
                         .p-info
                             font-size .28rem

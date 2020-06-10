@@ -3,7 +3,7 @@
         <fix-header class="header"></fix-header>
         <div class="inner-wraper">
             <div class="head-img-wraper">
-                <img class="head-img" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%9B%A2%E9%98%9F%E7%AE%80%E4%BB%8B%E9%A6%96%E5%9B%BE.jpg">
+                <img class="head-img" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E5%9B%A2%E9%98%9F%E4%BB%8B%E7%BB%8D%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
             </div>
             <div class="introduce-wrapper">
                 <div class="introduce-title-wrapper">
@@ -15,9 +15,12 @@
                     提供便利的校园生活服务。同时，是大学生提升自我、展现才能、开阔眼界的舞台。
                     经过近两年来的努力和发展，团队已经具备一定规模和实力。从最初的4人团队发展至
                     三大部门20余人的卓越团队。今后，我们将为大家提供更多更优质的服务。</div>
+
             </div>
             <div class="introduce-wrapper">
                 <div class="introduce-title-wrapper">
+                    <div class="edge"></div>
+                    <br><br>
                     <div class="title-square"></div>
                     <div class="title">发展历程</div>
                 </div>
@@ -119,6 +122,7 @@
 
                 </div>
             </div>
+            <div class="edge"></div>
             <div class="introduce-wrapper">
                 <div class="introduce-title-wrapper">
                     <div class="title-square"></div>
@@ -156,6 +160,7 @@
                     </li>
                 </ul>
             </div>
+            <div class="edge"></div>
             <div class="introduce-wrapper">
                 <div class="introduce-title-wrapper">
                     <div class="title-square"></div>
@@ -169,8 +174,11 @@
                     <div>团结&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务实&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进取&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创新</div>
                 </div>
             </div>
+
             <div class="introduce-wrapper">
                 <div class="introduce-title-wrapper">
+                    <div class="edge"></div>
+                    <br><br>
                     <div class="title-square"></div>
                     <div class="title">团队优势</div>
                 </div>
@@ -268,6 +276,7 @@
 
 <style lang="stylus" scoped>
     @import '../../assets/styles/timeLine.css'
+    @import "~styles/varibles.styl"
     .out-wrapper
         width 100%
         height 100%
@@ -278,7 +287,7 @@
         .inner-wraper
             position relative
             float left
-            top 1.15rem
+            top 1rem
             width 100%
             .head-img-wraper
                 width 100%
@@ -298,7 +307,7 @@
                         float left
                         width .4rem
                         height .4rem
-                        background #4cbcb0
+                        background $themeColor
                     .title
                         float left
                         margin-left .4rem
@@ -309,12 +318,12 @@
                     .slogon
                         font-weight 600
                         font-size .36rem
-                        color #4cbcb0
+                        color $themeColor
                         font-style italic
                         margin-bottom .4rem
                     .best-title
                         width 100%
-                        color #4cbcb0
+                        color $themeColor
                         font-size .33rem
                         margin .1rem
                         padding-top .2rem
@@ -325,7 +334,7 @@
                             width .25rem
                             height .25rem
                             border-radius 100%
-                            background #4cbcb0
+                            background $themeColor
                 .table-box
                     position relative
                     clear both
@@ -337,7 +346,7 @@
                             border-top: 10px solid transparent;
                             border-left: 10px solid transparent;
                             border-right: 10px solid transparent;
-                            border-bottom: 15px solid #4cbcb0;
+                            border-bottom: 15px solid $themeColor;
                             width: 0;
                             margin: 0 auto;
                             position: relative;
@@ -346,32 +355,32 @@
                             width: 5px;
                             height: 5px;
                             border-radius: 50%;
-                            background-color: #4cbcb0;
+                            background-color: $themeColor;
                             margin: 5px auto;
                             animation: Pone 2s ease infinite;
                         .two
                             width: 5px;
                             height: 5px;
                             border-radius: 50%;
-                            background-color: #4cbcb0;
+                            background-color: $themeColor;
                             margin: 5px auto;
                             animation: Ptwo 2s ease infinite;
                         .three
                             width: 5px;
                             height: 5px;
                             border-radius: 50%;
-                            background-color: #4cbcb0;
+                            background-color: $themeColor;
                             margin: 5px auto;
                             animation: Pthree 2s ease infinite;
                     .column-right
                         width 50%
                         padding 0 .5rem
-                        border-left .06rem solid #4cbcb0
+                        border-left .06rem solid $themeColor
                         line-height .4rem
                         .time
                             position relative
                             font-size .32rem
-                            color #4cbcb0
+                            color $themeColor
                             font-weight 600
                             line-height .62rem
                             .dian
@@ -382,17 +391,17 @@
                                 width .3rem
                                 height .3rem
                                 border-radius 50%
-                                background #4cbcb0
+                                background $themeColor
                     .column-left
                         width 50%
                         padding 0 .5rem
-                        border-right .06rem solid #4cbcb0
+                        border-right .06rem solid $themeColor
                         text-align right
                         line-height .5rem
                         .time
                             position relative
                             font-size .32rem
-                            color #4cbcb0
+                            color $themeColor
                             font-weight 600
                             line-height .62rem
                             .dian
@@ -403,12 +412,13 @@
                                 width .3rem
                                 height .3rem
                                 border-radius 50%
-                                background #4cbcb0
+                                background $themeColor
                 .start
                     position relative
                     top .3rem
+                    padding-bottom .3rem
                     font-size .34rem
-                    color #4cbcb0
+                    color $themeColor
                     font-weight 600
                     .time
                         position relative
@@ -466,6 +476,12 @@
                     font-size .3rem
                     line-height .6rem
                     color #6c6d6e
+            .edge
+                position float
+                width 100%
+                height .15rem
+                margin .05rem 0
+                background #f1f1f3
         .footer
              position relative
              float left

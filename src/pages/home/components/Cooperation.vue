@@ -35,7 +35,7 @@
         overflow hidden
         .header
             padding .25rem 0 .55rem .28rem
-            background #fff
+
             .sign
                 float left
                 width .15rem
