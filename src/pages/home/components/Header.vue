@@ -24,6 +24,7 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
         position fixed
         top 0
@@ -31,30 +32,31 @@
         right 0
         width 100%
         height 0
-        box-shadow 0 0 .2rem 0 #666
-        padding-bottom 1.15rem
-        background #4CBCB0
+        box-shadow 0 0 .1rem 0 #bfc1c2
+        padding-bottom 1rem
+        background #fff
         z-index 999
         .img-wrapper
             position absolute
             top .05rem
-            height 1.05rem
-            width 1.05rem
+            height .9rem
+            width .9rem
             line-height .92rem
             .logo
                 width 100%
         .title
             position absolute
-            left 1.2rem
-            height 1.23rem
-            line-height 1.23rem
-            font-size .35rem
-            color #fff
+            left 1.1rem
+            height 1.1rem
+            line-height 1.1rem
+            font-size .33rem
+            color #686868
+            font-weight 550
         .icon-more
             position absolute
             right .3rem
             top .35rem
             .iconfont
-                font-size .45rem
-                color #fff
+                font-size .38rem
+                color #616161
 </style>

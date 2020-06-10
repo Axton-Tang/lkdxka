@@ -88,6 +88,7 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
         z-index 200
         .back-wrapper
@@ -119,7 +120,7 @@
                 font-size .32rem
                 padding-left .6rem
             .active
-                background #4CBCB0
+                background $themeColor
                 color #ffffff
                 opacity .4
                 font-size  .38rem

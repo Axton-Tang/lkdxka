@@ -60,20 +60,20 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
         position relative
-        float lefts
-        padding-top .25rem
+        float left
         width 100%
         overflow hidden
         .header
-            margin-left .28rem
-            padding-bottom .55rem
+            padding .25rem 0 .55rem .28rem
+            background #fff
             .sign
                 float left
                 width .15rem
                 height .36rem
-                background #48aca0
+                background $themeColor
             .header-content
                 float left
                 margin-left .3rem
@@ -81,9 +81,10 @@
             .header-icon
                 float left
                 margin-left .3rem
-                color #48aca0
+                color $themeColor
         .part-one
             position relative
+            top .1rem
             .img-wrapper
                 clear both
                 width 100%
@@ -121,7 +122,7 @@
                         width 1.5rem
                         height .5rem
                         line-height .45rem
-                        color #44B64A
+                        color $themeColor
                         background #ffffff
                         box-shadow 0 0 .07rem  #333333
                         text-align center

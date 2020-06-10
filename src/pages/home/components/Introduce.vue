@@ -71,7 +71,7 @@
 </script>
 
 <style lang="stylus" scoped>
-
+    @import "~styles/varibles.styl"
     .wrapper
         position relative
         padding-top .1rem
@@ -79,7 +79,7 @@
         .img-wrapper
             width 100%
             height 0
-            padding-bottom 56.667%
+            padding-bottom 55.667%
             overflow hidden
             margin 0 auto
             text-align center
@@ -100,9 +100,9 @@
                     width 2rem
                     height .5rem
                     line-height .5rem
-                    color #44a397
+                    color $themeColor
                     background #ffffff
-                    box-shadow 0 0 .07rem  #333333
+                    box-shadow 0 0 .07rem  $themeColor
                     text-align center
                     border-radius .06rem
             .info2-wrapper
@@ -113,7 +113,7 @@
                     height .5rem
                     line-height .5rem
                     color #ffffff
-                    background #44a397
+                    background $themeColor
                     box-shadow 0 0 .07rem  #333333
                     text-align center
                     border-radius .06rem
@@ -129,7 +129,7 @@
                     border-radius .06rem
                     z-index 100
                     .inner2-text
-                        color #31a693
+                        color $themeColor
                         text-align center
                         letter-spacing .05rem
                         font-size .28rem

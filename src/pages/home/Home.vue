@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <img class="wrapper-back" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E8%83%8C%E6%99%AF.jpg">
+        <div class="wrapper-back"></div>
         <home-header  @asideClick="handleAsideClick"></home-header>
         <home-icons></home-icons>
         <home-introduce :introShow="introShow"
@@ -141,6 +141,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
         overflow hidden
         .wrapper-back
@@ -151,6 +152,7 @@ export default {
             bottom 0
             right 0
             left 0
+            background #F6F6F8
         .introduce
             overflow visible
         .go-top
@@ -162,7 +164,7 @@ export default {
             background white
             border-radius .06rem
             .iconfont
-                color #2CD6B1
+                color $themeColor
                 font-size .8rem
 
 </style>

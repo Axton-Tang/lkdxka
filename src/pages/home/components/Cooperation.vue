@@ -27,19 +27,20 @@
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
         position relative
         float left
         width 100%
         overflow hidden
         .header
-            margin-left .28rem
-            padding-bottom .5rem
+            padding .25rem 0 .55rem .28rem
+            background #fff
             .sign
                 float left
                 width .15rem
                 height .36rem
-                background #48aca0
+                background $themeColor
             .header-content
                 float left
                 margin-left .3rem
@@ -48,11 +49,12 @@
                 float left
                 margin-left .3rem
                 font-size .4rem
-                color #48aca0
+                color $themeColor
         .inner-wrap
             position relative
             overflow hidden
             width 100%
+            top .1rem
             .img-wrapper
                 width 50%
                 height 0
