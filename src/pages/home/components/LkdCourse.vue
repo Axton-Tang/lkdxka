@@ -1,7 +1,8 @@
 <template>
     <div class="wrapper">
+        <div class="back"></div>
         <router-link to="/">
-            <fix-header></fix-header>
+            <fix-header class="header"></fix-header>
         </router-link>
         <div class="wrapper-inner">
             <div class="title-wrapper">
@@ -41,7 +42,7 @@
                         <span class="iconfont icon-right" v-show="showRow2">&#xe600;</span>
                     </div>
                 </div>
-                <div class="mini-wrapper" v-show="show">
+                <div class="mini-wrapper" v-show="showMini">
                     <div class="mini">请在微信小程序中搜索 “林大课表” 即可使用</div>
                 </div>
                 <a href="https://ics.ldkb.xyz/#/">
@@ -60,23 +61,23 @@
 </template>
 
 <script>
-    import FixHeader from './FixHeader'
+    import FixHeader from '../../FixHeader'
 
     export default {
-        name: 'Course',
+        name: 'LkdCourse',
         components :{
             FixHeader,
         },
         data(){
             return{
-                show:false,
+                showMini:false,
                 showRow1: true,
                 showRow2: false
             }
         },
         methods: {
             handleClickMini(){
-                this.show=!this.show;
+                this.showMini=!this.showMini;
                 this.showRow1=!this.showRow1;
                 this.showRow2=!this.showRow2;
             }
@@ -87,13 +88,25 @@
 <style lang="stylus" scoped>
     @import "~styles/varibles.styl"
     .wrapper
-        position fixed
-        width 100%
-        height 100%
-        background $grayBack
+        .back
+            position fixed
+            width 100%
+            height 100%
+            top 0
+            bottom 0
+            right 0
+            left 0
+            background $grayBack
+        .header
+            position fixed
+            top 0
+            height 0
+            overflow hidden
         .wrapper-inner
             position relative
             top 1rem
+            width 100%
+            overflow hidden
             .title-wrapper
                 position relative
                 width 100%
@@ -118,7 +131,7 @@
                     position relative
                     background #fff
                     width 100%
-                    height 1rem
+                    height 1.1rem
                     font-size .35rem
                     color #333333
                     .item
@@ -136,7 +149,7 @@
                             line-height .45rem
                         .iconfont
                             font-size .4rem
-                            margin-right .2rem
+                            margin-right .28rem
                             font-weight 600
                         .icon-left-1
                             color #1a02fd
@@ -152,7 +165,8 @@
                         .icon-right
                             position absolute
                             right .5rem
-                            color #ccc
+                            color #d7d7d7
+                            font-size .32rem
                 .mini-wrapper
                     position relative
                     width 100%

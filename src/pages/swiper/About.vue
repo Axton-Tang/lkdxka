@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <router-link to="/">
-            <fix-header></fix-header>
+            <fix-header class="header"></fix-header>
         </router-link>
         <router-link to="/story">
             <div class="develop-wrapper">
@@ -80,6 +80,9 @@
         position relative
         float left
         overflow hidden
+        .header
+            position fixed
+            top 0
         .develop-wrapper
             position relative
             margin-top 1rem
@@ -120,8 +123,8 @@
             position relative
             float left
             width 92%
-            height .03rem
-            background #e2e2e2
+            height .02rem
+            background #ebebeb
             margin-left .36rem
         .introduce-wrapper
             position relative

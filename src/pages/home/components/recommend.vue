@@ -7,7 +7,7 @@
         </div>
         <div class="part-one">
             <div class="img-wrapper">
-                <router-link to="/course">
+                <router-link to="/LkdCourse">
                     <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E6%9E%97%E5%A4%A7%E8%AF%BE%E8%A1%A8%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
                 </router-link>
             </div>

@@ -9,7 +9,7 @@ import Business from '../pages/swiper/Business'
 import Chat from '../pages/home/components/Chat'
 import Contribution from '../pages/cooperation/contribution'
 import Propo from '../pages/cooperation/Propo'
-import Course from '../pages/Course'
+import LkdCourse from '../pages/home/components/LkdCourse'
 
 
 Vue.use(Router)
@@ -53,9 +53,9 @@ export default new Router({
           name: 'Story',
           component: Story
       },{
-          path: '/course',
-          name: 'Course',
-          component: Course
+          path: '/lkdCourse',
+          name: 'LkdCourse',
+          component: LkdCourse
       }
   ],
     scrollBehavior (to,from,savedPosition) {
