@@ -7,9 +7,9 @@
         </div>
         <div class="part-one">
             <div class="img-wrapper">
-                <a href="http://www.ldkb.xyz">
+                <router-link to="/course">
                     <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E6%9E%97%E5%A4%A7%E8%AF%BE%E8%A1%A8%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
-                </a>
+                </router-link>
             </div>
         </div>
         <div class="part-two">
@@ -25,15 +25,7 @@
 
 <script>
     export default {
-        name: 'HomeRecommend',
-        methods : {
-            handleMiniClick () {
-                this.$emit('clickMini');
-            },
-            handleOtherClick (){
-                this.$emit('clickOther');
-            }
-        }
+        name: 'HomeRecommend'
     }
 </script>
 
@@ -94,5 +86,5 @@
             width 100%
             height .15rem
             margin .05rem 0
-            background #f1f1f3
+            background $grayBack
 </style>

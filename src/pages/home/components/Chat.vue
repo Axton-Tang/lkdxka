@@ -140,7 +140,7 @@
             width: 100%
             height: 100%
             overflow: auto
-            background #f1f1f3
+            background $grayBack
             .content-item
                 margin-top .2rem
                 display block
@@ -202,7 +202,7 @@
                 margin-left: .25rem
                 padding 0 .4rem
                 box-sizing border-box
-                background #efeff1
+                background $grayBack
             .footer-btn
                 margin-top: .2rem
                 display: inline-block

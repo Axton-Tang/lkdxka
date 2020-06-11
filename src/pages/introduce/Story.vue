@@ -481,7 +481,7 @@
                 width 100%
                 height .15rem
                 margin .05rem 0
-                background #f1f1f3
+                background $grayBack
         .footer
              position relative
              float left

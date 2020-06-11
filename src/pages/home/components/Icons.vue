@@ -84,6 +84,6 @@
         .edge
             width 100%
             height .15rem
-            margin .2rem 0
-            background #f1f1f3
+            margin .05rem 0
+            background $grayBack
 </style>

@@ -9,11 +9,13 @@ import Business from '../pages/swiper/Business'
 import Chat from '../pages/home/components/Chat'
 import Contribution from '../pages/cooperation/contribution'
 import Propo from '../pages/cooperation/Propo'
+import Course from '../pages/Course'
 
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
           path: '/',
@@ -51,6 +53,10 @@ export default new Router({
           path: '/story',
           name: 'Story',
           component: Story
+      },{
+          path: '/course',
+          name: 'Course',
+          component: Course
       }
   ],
     scrollBehavior (to,from,savedPosition) {

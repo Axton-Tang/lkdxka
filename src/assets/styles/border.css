@@ -75,7 +75,7 @@
 .border-topbottom::before,
 .border-topleft::before,
 .border-topright::before {
-    border-top: 1px solid #eaeaea;
+    border-top: 2px solid #eaeaea;
     transform-origin: 0 0;
 }
 .border-right::before,
@@ -89,7 +89,7 @@
 .border-topbottom::after,
 .border-rightbottom::after,
 .border-bottomleft::before {
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
     transform-origin: 0 100%;
 }
 .border-left::before,

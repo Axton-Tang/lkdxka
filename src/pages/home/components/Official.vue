@@ -56,14 +56,14 @@
             .img-wrapper
                 width 50%
                 height 0
-                padding-bottom 65%
+                padding-bottom 67%
                 float left
                 .img-content01
                     width 91%
                     margin-top .1rem
                     margin-left .25rem
                     border-radius .26rem
-                    box-shadow 0 0 .07rem $themeColor
+                    box-shadow 0 0 .05rem $themeColor
 
                 .img-content02
                     width 91%
@@ -71,10 +71,10 @@
                     margin-top .1rem
                     margin-right .25rem
                     border-radius .26rem
-                    box-shadow 0 0 .07rem  $themeColor
+                    box-shadow 0 0 .05rem  $themeColor
         .edge
             width 100%
             height .15rem
             margin .05rem 0
-            background #f1f1f3
+            background $grayBack
 </style>

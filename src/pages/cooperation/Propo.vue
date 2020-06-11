@@ -12,7 +12,7 @@
                         <img class="inner" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%90%88%E4%BD%9C%E5%AE%A3%E4%BC%A0%E5%86%85%E5%9B%BE.jpg">
                     </div>
                     <div class="code-wrapper">
-                        <img class="code" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">
+                        <img class="code" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E5%95%86%E5%8A%A1%E5%90%88%E4%BD%9C%E4%BA%8C%E7%BB%B4%E7%A0%81%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
                         <h2 class="info">微信扫码，联系外联负责人</h2>
                     </div>
                     <fix-footer class="footer"></fix-footer>
@@ -42,7 +42,7 @@
         right 0
         bottom 0
         left 0
-        background #f1f1f3
+        background $grayBack
         opacity .4
     .wrapper
         position relative

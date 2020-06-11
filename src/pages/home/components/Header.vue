@@ -52,7 +52,6 @@
             line-height 1.1rem
             font-size .33rem
             color #686868
-            font-weight 550
         .icon-more
             position absolute
             right .35rem

@@ -52,7 +52,7 @@
         right 0
         bottom 0
         left 0
-        background #f1f1f3
+        background $grayBack
         opacity .4
     .wrapper
         position relative

@@ -121,7 +121,7 @@
             float left
             width 92%
             height .03rem
-            background #f1f1f1
+            background #e2e2e2
             margin-left .36rem
         .introduce-wrapper
             position relative

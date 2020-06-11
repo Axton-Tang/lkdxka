@@ -7,9 +7,7 @@
                         class="introduce"
         ></home-introduce>
         <home-icons></home-icons>
-        <home-recommend @clickMini="handleClickMini"
-                        @clickOther="handleClickOther"
-        ></home-recommend>
+        <home-recommend></home-recommend>
         <home-official></home-official>
         <home-cooperation></home-cooperation>
 
@@ -33,10 +31,7 @@
                     @closeAside="handleAsideClick"
         ></home-aside>
 
-        <home-pop :miniShow="miniShow"
-                  @popClose="handleClickMini"
-                  :otherShow="otherShow"
-                  @otherClose="handleClickOther"
+        <home-pop
                   :developerShow="developerShow"
                   @developerClose="handleDeveloper"
         ></home-pop>
@@ -73,20 +68,13 @@ export default {
     data () {
         return {
             introShow :0,
-            miniShow : false,
-            otherShow :false,
             developerShow :false,
             backFlag : false,
             asideShow : false
         }
     },
     methods : {
-        handleClickMini (){
-            this.miniShow=!this.miniShow;
-        },
-        handleClickOther (){
-            this.otherShow=!this.otherShow;
-        },
+
         handleDeveloper (){
             this.developerShow = !this.developerShow;
         },
