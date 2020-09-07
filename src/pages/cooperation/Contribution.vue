@@ -122,6 +122,5 @@
                 .footer
                     position relative
                     float left
-                    padding-bottom 48%
 
 </style>

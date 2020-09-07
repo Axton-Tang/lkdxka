@@ -78,7 +78,6 @@
                 .footer
                     position relative
                     float left
-                    padding-bottom 48%
                 .code-wrapper
                     position relative
                     width 50%

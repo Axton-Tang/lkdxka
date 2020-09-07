@@ -30,7 +30,6 @@
     @import "~styles/varibles.styl"
     .wrapper
         position relative
-        float left
         width 100%
         overflow hidden
         .header

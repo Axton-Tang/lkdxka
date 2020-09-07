@@ -10,7 +10,7 @@
                     <div class="title-square"></div>
                     <div class="title">团队介绍</div>
                 </div>
-                <div class="introduce">林科大小可爱团队成立于2018年7月，由一群热爱传媒事业的学长学姐们组建而成，
+                <div class="introduce">林科大小可爱团队 (现：觅漾工作室) 成立于2018年7月，由一群热爱传媒事业的学长学姐们组建而成，
                     是一家服务于林科大的独立的创新创业校园媒体。团队旨在丰富同学们的校园文化生活，
                     提供便利的校园生活服务。同时，是大学生提升自我、展现才能、开阔眼界的舞台。
                     经过近两年来的努力和发展，团队已经具备一定规模和实力。从最初的4人团队发展至
@@ -34,11 +34,26 @@
                         </div>
                     </transition>
                     <table>
-                        <tbody><tr>
+                        <tbody>
+                            <tr>
                             <td class="column-left"></td>
                             <td class="column-right">
-                                <p class="time">2020.06 <i class="dian active"></i></p>
+                                <p class="time">2020.09 <i class="dian active"></i></p>
                                 <p>林科大小可爱官网上线</p>
+                            </td>
+                        </tr>
+                       <tr>
+                            <td class="column-left">
+                                <p class="time">2020.08 <i class="dian"></i></p>
+                                <p>林科大卡通版手绘地图上线！<br> 七夕节H5版“表白墙”上线</p>
+                            </td>
+                            <td class="column-right"></td>
+                        </tr>
+                        <tr>
+                            <td class="column-left"></td>
+                            <td class="column-right">
+                                <p class="time">2020.07 <i class="dian active"></i></p>
+                                <p>2020高考志愿填报分析系统上线！<br>使用人数达 1600 余人</p>
                             </td>
                         </tr>
                         <tr>
@@ -118,6 +133,7 @@
                     <div class="start">
                         <p class="time">2018.07</p>
                         <p>林科大小可爱团队成立</p>
+                        <p style="color: #666;font-size:.3rem;margin-top:.2rem">（现：觅漾工作室）</p>
                     </div>
 
                 </div>
@@ -234,9 +250,9 @@
         data () {
             return {
                 startVal: 0,
-                endVal01: 14,
-                endVal02: 24,
-                endVal03: 9000,
+                endVal01: 25,
+                endVal02: 30,
+                endVal03: 10000,
                 show :false,
                 showLine :true,
                 count : 0
@@ -253,7 +269,7 @@
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
                 that.scrollTop = scrollTop;
                 //判断滚动超出一定距离后在让返回顶部按钮出现
-                if (that.scrollTop > 1350) {
+                if (that.scrollTop > 1400) {
                     this.showLine=false;
                     this.show=true;
                     if(this.count===0){
@@ -486,5 +502,4 @@
              position relative
              float left
              margin-top 1.5rem
-             padding-bottom 48%
 </style>

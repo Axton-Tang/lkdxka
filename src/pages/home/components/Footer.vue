@@ -1,74 +1,36 @@
 <template>
     <div class="wrapper">
-        <div class="content-wrapper">
-            <div class="mail-wrapper">
-                <span class="iconfont">&#xe625;</span>
-                邮箱：lkdxka@163.com
-            </div>
-            <div class="row-line"></div>
-            <div class="detail-wrapper">
-                <div class="detail"
-                     @click="handleDeveloper"
-                >
-                    <p>Copyright © 2018 - 2020 LKDXKA All Rights Reserved.</p>
-                    <p>湖南庠序文化传媒有限公司 &nbsp;&nbsp;觅漾工作室&nbsp;&nbsp;&nbsp;&nbsp;旗下品牌</p>
-                    <p class="pop-detail">开发者 ： 觅漾工作室技术部  &nbsp;
-                        Axton Tang
-                    </p>
-                </div>
-            </div>
-        </div>
+        <div class="banquan">© 2018-2020 lkdxka.com 版权所有</div>
+        <div>觅漾工作室旗下品牌 开发者：<a href="https://www.axton-tang.top/" target="_blank">Axton Tang</a></div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'HomeFooter',
-        methods : {
-            handleDeveloper (){
-                this.$emit ('clickDeveloper')
-            }
-        }
+        name: 'HomeFooter'
     }
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/varibles.styl"
     .wrapper
-        position relative
-        float left
-        top .5rem
-        bottom 0
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width 100%
-        height 0
-        padding-bottom 53%
-        background #2E2F33
-        color #6C6D6E
-        .content-wrapper
-            position relative
-            .mail-wrapper
-                position absolute
-                top .5rem
-                left .5rem
-                font-size .32rem
-            .row-line
-                position absolute
-                float left
-                top 1.25rem
-                width 90%
-                height 0
-                padding-bottom .02rem
-                margin 0 .45rem
-                background #6C6D6E
-                opacity .8
-            .detail-wrapper
-                position absolute
-                float left
-                width 100%
-                margin-top 1.5rem
-                .detail
-                    position flex
-                    text-align center
-                    font-size .26rem
-                    height .6rem
-                    line-height .6rem
+        margin-top .5rem
+        padding .4rem 0
+        background #f8fafc
+        color #93999f
+        box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.2)
+        .banquan 
+            text-align center
+            padding 0 .8rem
+        div
+            line-height .6rem
+            a
+                display inline-block
+                position relative
+                z-index 1
+                color $themeColor
 </style>

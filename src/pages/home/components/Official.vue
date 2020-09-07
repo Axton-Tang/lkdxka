@@ -9,9 +9,11 @@
             <div class="img-wrapper">
                 <img class="img-content01" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%AE%98%E6%96%B9%E5%8F%B7-%E5%85%AC%E4%BC%97%E5%8F%B7.jpg">
             </div>
-            <div class="img-wrapper">
-                <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%AE%98%E6%96%B9%E5%8F%B7-%E5%AE%98Q.jpg">
-            </div>
+            <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1442285142&website=www.oicqzone.com">
+                <div class="img-wrapper">
+                    <img class="img-content02" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E5%AE%98%E6%96%B9%E5%8F%B7-%E5%AE%98Q.jpg">
+                </div>
+            </a>
         </div>
         <div class="edge"></div>
     </div>

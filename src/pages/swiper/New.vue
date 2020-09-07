@@ -3,9 +3,15 @@
         <router-link to="/">
             <fix-header class="header"></fix-header>
         </router-link>
-        <div class="info">
-            该区域暂未开放，敬请期待！
-        </div>
+        <iframe
+            id="iframeContain"
+            name="iframeContain"
+            seamless
+            scrolling="yes"
+            src="https://mp.weixin.qq.com/mp/homepage?__biz=MzUxODkyNjczNQ==&hid=4&sn=31c4784ce32501f73e87598a2a05a6fa"
+        >
+            您当前的浏览器不支持页面上的功能，请升级您当前的浏览器版本或使用谷歌浏览器访问当前页面
+        </iframe>
     </div>
 </template>
 
@@ -20,17 +26,10 @@
 </script>
 
 <style lang="stylus" scoped>
-    .wrapper
+    #iframeContain{
         position absolute
-        top 7rem
-        width 100%
-        height 2rem
-        .header
-            position fixed
-            top 0
-            height 0
-        .info
-            position relative
-            font-size .36rem
-            text-align center
+        top 1rem
+        width: 100%;
+        height: 800px;
+    }
 </style>

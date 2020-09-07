@@ -14,6 +14,11 @@
         </div>
         <div class="part-two">
             <div class="img-wrapper">
+                <a href="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E6%9E%97%E7%A7%91%E5%A4%A7%E5%8D%A1%E9%80%9A%E5%9C%B0%E5%9B%BE.png">
+                    <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/home/%E6%9E%97%E7%A7%91%E5%A4%A7%E5%9C%B0%E5%9B%BE%E5%B0%81%E9%9D%A2.jpg">
+                </a>
+            </div>
+            <div class="img-wrapper">
                 <a href="https://pan.baidu.com/s/1pzaHGmB9-QWNh2IOjmdzSw">
                     <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E5%B0%8F%E5%8F%AF%E7%88%B1%E8%A1%A8%E6%83%85%E5%8C%85%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
                 </a>

@@ -42,7 +42,6 @@
                 <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E6%8A%80%E6%9C%AF%E9%83%A8%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
             </div>
         </div>
-        <fix-footer class="footer"></fix-footer>
         <department-b></department-b>
     </div>
 
@@ -156,7 +155,4 @@
                 .img-content
                     width 100%
                     border-radius .16rem
-        .footer
-            position relative
-            float left
 </style>

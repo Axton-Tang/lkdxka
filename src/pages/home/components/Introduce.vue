@@ -3,7 +3,7 @@
         <div class="intro-back"></div>
         <div class="back-info">你这么可爱，还来看我！</div>
         <div class="img-wrapper" @click="closeDepart">
-            <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E4%BA%86%E8%A7%A3%E6%88%91%E4%BB%AC%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89.jpg">
+            <img class="img-content" src="https://lkdxka.oss-cn-shenzhen.aliyuncs.com/zip/%E4%BA%86%E8%A7%A3%E6%88%91%E4%BB%AC%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%88%E5%8E%8B%E7%BC%A9%E5%90%8E%EF%BC%89%E6%96%B0.jpg">
         </div>
         <div class="info-wrapper">
             <router-link to="/story">
@@ -105,7 +105,7 @@
             .img-content
                 width 93%
                 border-radius .26rem
-                box-shadow 0 0 .07rem  #333333
+                box-shadow 0 0 .07rem  #8b8b8b
         .info-wrapper
             position absolute
             width 4.6rem

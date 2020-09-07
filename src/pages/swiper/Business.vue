@@ -25,7 +25,7 @@
                     <div class="info">
                         添加好友，进行合作洽谈！
                     </div>
-                    <fix-footer class="footer"></fix-footer>
+                    
                 </div>
             </div>
         </div>
@@ -130,10 +130,4 @@
                     margin-bottom .5rem
                     text-align center
                     font-size .32rem
-                    color #a2a2a2
-                .footer
-                    position relative
-                    float left
-                    padding-bottom 48%
-
 </style>

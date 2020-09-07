@@ -2,19 +2,28 @@
     <div class="icons">
         <swiper>
             <swiper-slide>
-                <router-link tag="div"
-                             class="icon"
-                             v-for="item of list"
-                             :key="list.id"
-                             :to="'/swiper/'+ item.id"
+                <div tag="div"
+                    class="icon"
+                    v-for="item of list"
+                    :key="item.id"
                 >
-                    <div class="icon-img">
-                        <img class="icon-img-content"
-                             :src="item.imgUrl"
-                        >
-                    </div>
-                    <div class="icon-desc">{{item.desc}}</div>
-                </router-link>
+                    <router-link v-if="item.id !== '002'" :to="'/swiper/'+ item.id">
+                        <div class="icon-img">
+                            <img class="icon-img-content"
+                                :src="item.imgUrl"
+                            >
+                        </div>
+                        <div class="icon-desc">{{item.desc}}</div>
+                    </router-link>
+                    <a v-if="item.id === '002'" href="https://mp.weixin.qq.com/mp/homepage?__biz=MzUxODkyNjczNQ==&hid=4&sn=31c4784ce32501f73e87598a2a05a6fa">
+                        <div class="icon-img">
+                            <img class="icon-img-content"
+                                :src="item.imgUrl"
+                            >
+                        </div>
+                        <div class="icon-desc">{{item.desc}}</div>
+                    </a>
+                </div>
             </swiper-slide>
         </swiper>
         <div class="edge"></div>

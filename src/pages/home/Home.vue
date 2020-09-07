@@ -10,6 +10,7 @@
         <home-recommend></home-recommend>
         <home-official></home-official>
         <home-cooperation></home-cooperation>
+        <home-footer class="footer" @clickDeveloper="handleDeveloper"></home-footer>
 
         <transition name="fade"
                     enter-active-class="animated fadeIn"
@@ -24,8 +25,6 @@
                 <div class="iconfont">&#xe6fa;</div>
             </div>
         </transition>
-
-        <home-footer @clickDeveloper="handleDeveloper"></home-footer>
 
         <home-aside :asideShow="asideShow"
                     @closeAside="handleAsideClick"
@@ -147,7 +146,7 @@ export default {
         .go-top
             position fixed
             right .3rem
-            bottom 1rem
+            bottom .8rem
             width .8rem
             height .8rem
             background white
@@ -156,5 +155,4 @@ export default {
             .iconfont
                 color $themeColor
                 font-size .8rem
-
 </style>
