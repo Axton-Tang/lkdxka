@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <div class="banquan">© 2018-2020 lkdxka.com 版权所有</div>
-        <div>觅漾工作室旗下品牌 开发者：<a href="https://www.axton-tang.top/" target="_blank">Axton Tang</a></div>
+        <div class="banquan">© 2020 lkdxka.com 版权所有</div>
+        <div>觅漾工作室旗下品牌 开发者：<a href="https://axton-tang.top/whoami/" target="_blank">Axton Tang</a></div>
     </div>
 </template>
 
